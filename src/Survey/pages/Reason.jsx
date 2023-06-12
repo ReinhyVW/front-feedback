@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 import images from "../../shared/images/images";
-import requireAuth from "../../shared/domain/requireAuth"
+import requireAuth from "../../shared/domain/requireAuth.jsx"
 
 import AnswerCard from "../components/AnswerCard"
 import ReasonCard from "../components/ReasonCard"

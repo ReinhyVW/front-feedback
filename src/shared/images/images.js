@@ -1,4 +1,5 @@
 import dhg from './dhg.jpg';
+import loginBg from './loginBg.jpg';
 import dhgSmall from './dhgSmall.svg';
 import home from './home.svg';
 import survey from './survey.svg';
@@ -18,6 +19,7 @@ import toggled from './toggled.svg';
 
 const images = {
     dhg,
+    loginBg,
     dhgSmall,
     home,
     survey,

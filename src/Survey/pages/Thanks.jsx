@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import images from '../../shared/images/images';
-import requireAuth from '../../shared/domain/requireAuth';
+import requireAuth from '../../shared/domain/requireAuth.jsx';
 
 function Thanks() {
     useEffect(() => {

@@ -1,7 +1,7 @@
 import images from "../../shared/images/images"
-import requireAuth from "../../shared/domain/requireAuth"
+import requireAuth from "../../shared/domain/requireAuth.jsx"
 
-import AnswerCard from "../components/AnswerCard"
+import AnswerCard from "../components/AnswerCard.jsx"
 
 function Answer() {
     return (

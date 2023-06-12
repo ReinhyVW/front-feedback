@@ -1,20 +1,20 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Login from './login/pages/Login'
+import Login from './login/pages/Login.jsx'
 
-import Portal from './Portal/pages/Portal'
+import Portal from './Portal/pages/Portal.jsx'
 
-import Answer from './Survey/pages/Answer'
-import Reason from './Survey/pages/Reason'
-import Thanks from './Survey/pages/Thanks'
+import Answer from './Survey/pages/Answer.jsx'
+import Reason from './Survey/pages/Reason.jsx'
+import Thanks from './Survey/pages/Thanks.jsx'
 
-import Dashboard from './Dashboard/pages/Dashboard'
-import Detail from './Dashboard/pages/Detail'
+import Dashboard from './Dashboard/pages/Dashboard.jsx'
+import Detail from './Dashboard/pages/Detail.jsx'
 
-import Admin from './Admin/pages/Admin'
+import Admin from './Admin/pages/Admin.jsx'
 
-import Data from './Data/pages/Data'
+import Data from './Data/pages/Data.jsx'
 
 function App() {
   return (

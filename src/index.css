@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+#reactgooglegraph-1 text {
+    fill: #082F49 !important;
+}
+
+#reactgooglegraph-2 text {
+    fill: #082F49 !important;
+}
+
+#reactgooglegraph-3 text {
+    fill: #082F49 !important;
+}
+
+#reactgooglegraph-4 text {
+    fill: #082F49 !important;
+}
+
+#reactgooglegraph-5 text {
+    fill: #082F49 !important;
+}

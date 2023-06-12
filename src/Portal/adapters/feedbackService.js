@@ -1,5 +1,5 @@
 export async function fetchFeedback() {
-    const response = await fetch('http://localhost:4000/information');
+    const response = await fetch('https://feedback-back-dhg.azurewebsites.net/information');
     const { feedback } = await response.json();
     return feedback;
 }

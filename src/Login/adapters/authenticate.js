@@ -1,5 +1,5 @@
 export default function autenticate(username, password) {
-    return fetch('http://localhost:4000/auth', {
+    return fetch('https://feedback-back-dhg.azurewebsites.net/auth', {
         method: 'POST',
         body: JSON.stringify({ username, password }),
         headers: {

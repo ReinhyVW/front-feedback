@@ -1,5 +1,5 @@
 export default function submitSurvey(answer, reason, token) {
-    fetch('http://localhost:4000/survey', {
+    fetch('https://feedback-back-dhg.azurewebsites.net/survey', {
         method: 'POST',
         body: JSON.stringify({ answer, reason, token }),
         headers: {

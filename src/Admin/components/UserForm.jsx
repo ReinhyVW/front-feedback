@@ -102,7 +102,7 @@ export default function UserForm() {
                         <label className="p-2 w-3/5">
                             Center
                         </label>
-                        <select name="" className="w-3/5" defaultValue={0} id="centerId" onChange={(e) => setCenterId(e.target.value)} value={centerId}>
+                        <select name="" className="w-3/5" id="centerId" onChange={(e) => setCenterId(e.target.value)} value={centerId}>
                             <option className="bg-sky-50 hover:text-sky-950 text-sky-950" value="0">Please select</option>
                             {centers.map((center) => (
                                 <option className="bg-sky-50 hover:text-sky-950 text-sky-950" key={center.CenterId} value={center.CenterId}>
@@ -116,7 +116,7 @@ export default function UserForm() {
                         <label className="p-2 w-2/5">
                             Role
                         </label>
-                        <select name="" className="w-3/5" defaultValue={0} id="roleId" onChange={(e) => setRoleId(e.target.value)} value={roleId}>
+                        <select name="" className="w-3/5" id="roleId" onChange={(e) => setRoleId(e.target.value)} value={roleId}>
                             <option value="0">Please select</option>
                             {roles.map((role) => (
                                 <option key={role.RoleId} value={role.RoleId}>

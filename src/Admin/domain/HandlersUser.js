@@ -12,7 +12,7 @@ const createUser = (event) => {
     token: token
   };
 
-  fetch('http://localhost:4000/useradd', {
+  fetch('https://feedback-back-dhg.azurewebsites.net/useradd', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ const editUser = (event) => {
     centerId: document.getElementById('centerId').value,
   };
 
-  fetch('http://localhost:4000/useredit', {
+  fetch('https://feedback-back-dhg.azurewebsites.net/useredit', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ const deleteUser = () => {
   const userId = localStorage.getItem('userId');
 
 
-  fetch(`http://localhost:4000/userdelete`, {
+  fetch(`https://feedback-back-dhg.azurewebsites.net/userdelete`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
@@ -88,7 +88,7 @@ const deleteUser = () => {
       // Manejar errores
       console.error(error);
     });
-  window.location.reload();
+  // window.location.reload();
 };
 
 export { createUser, editUser, deleteUser }

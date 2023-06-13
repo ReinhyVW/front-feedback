@@ -9,7 +9,7 @@ const createCenter = (event) => {
     token: token
   }
 
-  fetch('http://localhost:4000/centersadd', {
+  fetch('https://feedback-back-dhg.azurewebsites.net/centersadd', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ const editCenter = async (event) => {
   };
 
   try {
-    const response = await fetch(`http://localhost:4000/centersedit`, {
+    const response = await fetch(`https://feedback-back-dhg.azurewebsites.net/centersedit`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ const deleteCenter = () => {
   const token = localStorage.getItem('token');
   const centerId = localStorage.getItem('centerId');
 
-  fetch(`http://localhost:4000/centerdelete`, {
+  fetch(`https://feedback-back-dhg.azurewebsites.net/centerdelete`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',

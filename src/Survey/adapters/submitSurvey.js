@@ -6,5 +6,15 @@ export default function submitSurvey(answer, reason, token) {
             'Content-Type': 'application/json'
         }
     })
-        .catch(error => console.error(error));
+        .then((response) => response.json())
+        .then((data) => {
+            // Manejar la respuesta del servidor
+            console.log(data);
+        })
+        .catch((error) => {
+            // Manejar errores
+            console.error(error);
+        });
+
+        
 }

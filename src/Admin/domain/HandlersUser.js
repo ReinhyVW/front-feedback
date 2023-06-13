@@ -28,7 +28,7 @@ const createUser = (event) => {
       // Manejar errores
       console.error(error);
     });
-  window.location.reload();
+  // window.location.reload();
 };
 
 const editUser = (event) => {

@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'feedback-front-dhg'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E7DB28F03CD447B882F989C004B13798 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_17FC5D27F08C48D8960E2EA22EDF6649 }}
           package: .

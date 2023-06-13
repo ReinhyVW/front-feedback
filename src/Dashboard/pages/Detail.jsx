@@ -1,18 +1,18 @@
 import 'react-datepicker/dist/react-datepicker.css';
 import { Chart } from "react-google-charts";
 
-import NavBar from "../../shared/components/NavBar";
-import images from "../../shared/images/images";
-import requireAuth from "../../shared/domain/requireAuth"
+import NavBar from "../../shared/components/NavBar.jsx";
+import images from "../../shared/images/images.js";
+import requireAuth from "../../shared/domain/requireAuth.jsx"
 
-import { useFeedbackFilter, useFeedbackFilterYear } from '../domain/useFeedbackFilter';
-import { usePieData, useBarData } from '../domain/useChartData';
-import useDateHandler from '../domain/useDateHandler';
-import useReasonHandler from '../domain/useReasonHandler';
-import pickMaxReason from '../domain/pickMaxReason';
+import { useFeedbackFilter, useFeedbackFilterYear } from '../domain/useFeedbackFilter.js';
+import { usePieData, useBarData } from '../domain/useChartData.js';
+import useDateHandler from '../domain/useDateHandler.js';
+import useReasonHandler from '../domain/useReasonHandler.js';
+import pickMaxReason from '../domain/pickMaxReason.js';
 
-import SearchBar from "../components/SearchBar";
-import YearTable from '../components/YearTable';
+import SearchBar from "../components/SearchBar.jsx";
+import YearTable from '../components/YearTable.jsx';
 
 function Dashboard() {
     const { month, year, selectedDate } = useDateHandler(localStorage.getItem('searchDate'));

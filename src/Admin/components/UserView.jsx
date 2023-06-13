@@ -1,6 +1,6 @@
-import UserTable from "./UserTable"
-import UserForm from "./UserForm"
-import DeleteForm from "./DeleteForm"
+import UserTable from "./UserTable.jsx"
+import UserForm from "./UserForm.jsx"
+import DeleteForm from "./DeleteForm.jsx"
 
 export default function UserView() {
     return (

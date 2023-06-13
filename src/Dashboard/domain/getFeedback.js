@@ -1,4 +1,4 @@
-import { fetchFeedback } from '../adapters/feedbackService';
+import { fetchFeedback } from '../adapters/feedbackService.js';
 
 export const getFeedback = async () => {
     try {

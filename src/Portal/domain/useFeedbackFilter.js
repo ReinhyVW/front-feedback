@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getFeedback } from "./getFeedback";
+import { getFeedback } from "./getFeedback.js";
 
 export function useFeedbackFilter(date) {
     const [filteredFeedback, setFilteredFeedback] = useState([]);

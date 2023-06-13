@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 
-import Button from '../../shared/components/Button'
+import Button from '../../shared/components/Button.jsx'
 
-import { getCenters } from '../domain/getCenters';
-import saveSearchData from '../domain/saveSearchData';
+import { getCenters } from '../domain/getCenters.js';
+import saveSearchData from '../domain/saveSearchData.js';
 
-import CenterSelect from './CenterSelect';
+import CenterSelect from './CenterSelect.jsx';
 
 export default function SearchBar() {
     const [centers, setCenters] = useState([]);

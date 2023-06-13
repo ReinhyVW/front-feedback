@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getFeedback } from './getFeedback';
+import { getFeedback } from './getFeedback.js';
 
 export function useFeedbackTotalizer(date) {
   const [totalFeedbacks, setTotalFeedbacks] = useState(0);

@@ -10,11 +10,10 @@ export default function submitSurvey(answer, reason, token) {
         .then((data) => {
             // Manejar la respuesta del servidor
             console.log(data);
+            window.location.href = '/thanks'
         })
         .catch((error) => {
             // Manejar errores
             console.error(error);
         });
-
-        
 }

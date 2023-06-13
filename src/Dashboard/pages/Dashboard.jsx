@@ -1,16 +1,16 @@
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
-import NavBar from "../../shared/components/NavBar"
-import images from "../../shared/images/images"
-import requireAuth from "../../shared/domain/requireAuth"
+import NavBar from "../../shared/components/NavBar.jsx"
+import images from "../../shared/images/images.js"
+import requireAuth from "../../shared/domain/requireAuth.jsx"
 
-import useDateHandler from '../domain/useDateHandler'
-import { useFeedbackFilter } from '../domain/useFeedbackFilter'
-import pickMaxReason from '../domain/pickMaxReason';
+import useDateHandler from '../domain/useDateHandler.js'
+import { useFeedbackFilter } from '../domain/useFeedbackFilter.js'
+import pickMaxReason from '../domain/pickMaxReason.js';
 
-import SearchBar from "../components/SearchBar"
-import SummaryBar from '../components/SummaryBar';
+import SearchBar from "../components/SearchBar.jsx"
+import SummaryBar from '../components/SummaryBar.jsx';
 
 function Dashboard() {
     const { selectedDate, handleDateChange } = useDateHandler(new Date())

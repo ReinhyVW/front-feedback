@@ -1,4 +1,4 @@
-import { fetchCenters } from "../adapters/centerService";
+import { fetchCenters } from "../adapters/centerService.js";
 
 export const getCenters = async () => {
     try {

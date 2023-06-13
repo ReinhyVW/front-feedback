@@ -1,4 +1,4 @@
-import authenticate from '../adapters/authenticate';
+import authenticate from '../adapters/authenticate.js';
 
 export default function getCredentials(username, password) {
     authenticate(username, password)

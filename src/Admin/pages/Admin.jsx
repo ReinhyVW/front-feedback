@@ -1,9 +1,9 @@
-import NavBar from "../../shared/components/NavBar";
-import requireAuth from "../../shared/domain/requireAuth";
+import NavBar from "../../shared/components/NavBar.jsx";
+import requireAuth from "../../shared/domain/requireAuth.jsx";
 
-import useViewSetter from "../domain/useViewSetter";
+import useViewSetter from "../domain/useViewSetter.jsx";
 
-import AdminMenu from "../components/AdminMenu";
+import AdminMenu from "../components/AdminMenu.jsx";
 
 function Admin() {
   const { view, render, handleView, toggleStatus } = useViewSetter()

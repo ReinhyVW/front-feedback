@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-import { getCenters } from "../domain/getCenters";
-import { useSelectCenter } from "../domain/selectData";
+import { getCenters } from "../domain/getCenters.js";
+import { useSelectCenter } from "../domain/selectData.js";
 
 export default function CenterTable() {
   const [centers, setCenters] = useState([]);

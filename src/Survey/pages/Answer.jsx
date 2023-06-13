@@ -1,4 +1,4 @@
-import images from "../../shared/images/images"
+import images from "../../shared/images/images.js"
 import requireAuth from "../../shared/domain/requireAuth.jsx"
 
 import AnswerCard from "../components/AnswerCard.jsx"

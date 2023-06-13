@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import Button from '../../shared/components/Button'
+import Button from '../../shared/components/Button.jsx'
 
-import getCredentials from '../domain/getCredentials';
+import getCredentials from '../domain/getCredentials.js';
 
 export default function LoginForm() {
     const [username, setUsername] = useState('');

@@ -1,4 +1,4 @@
-import takeReason from "../domain/takeReason";
+import takeReason from "../domain/takeReason.js";
 
 export default function ReasonCard({ title, reason }) {
     const handleClick = () => {

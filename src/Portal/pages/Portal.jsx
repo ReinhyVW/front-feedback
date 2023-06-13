@@ -1,14 +1,14 @@
 import { Chart } from "react-google-charts";
 
-import NavBar from "../../shared/components/NavBar";
-import { formattedToday, today } from "../../shared/domain/today";
-import requireAuth from "../../shared/domain/requireAuth";
+import NavBar from "../../shared/components/NavBar.jsx";
+import { formattedToday, today } from "../../shared/domain/today.js";
+import requireAuth from "../../shared/domain/requireAuth.jsx";
 
-import DataCard from "../../shared/components/DataCard";
+import DataCard from "../../shared/components/DataCard.jsx";
 
-import { useFeedbackTotalizer } from "../domain/useFeedbackTotalizer";
-import { useFeedbackFilter } from "../domain/useFeedbackFilter";
-import { useBarData, usePieData } from "../domain/useChartData";
+import { useFeedbackTotalizer } from "../domain/useFeedbackTotalizer.js";
+import { useFeedbackFilter } from "../domain/useFeedbackFilter.js";
+import { useBarData, usePieData } from "../domain/useChartData.js";
 
 function Portal() {
     const [totalFeedbacks, poorSum] = useFeedbackTotalizer(today);

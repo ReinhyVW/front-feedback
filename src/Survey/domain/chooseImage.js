@@ -1,4 +1,4 @@
-import images from "../../shared/images/images"
+import images from "../../shared/images/images.js"
 
 export const answerImage = {
     "2": images.excellent,

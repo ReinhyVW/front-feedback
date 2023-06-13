@@ -1,4 +1,4 @@
-import takeAnswer from "../domain/takeAnswer";
+import takeAnswer from "../domain/takeAnswer.js";
 
 export default function AnswerCard({ icon, title, answer }) {
     const handleClick = () => {

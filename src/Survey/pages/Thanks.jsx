@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import images from '../../shared/images/images';
+import images from '../../shared/images/images.js';
 import requireAuth from '../../shared/domain/requireAuth.jsx';
 
 function Thanks() {

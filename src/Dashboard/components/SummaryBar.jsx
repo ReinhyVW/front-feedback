@@ -1,7 +1,7 @@
-import images from '../../shared/images/images';
+import images from '../../shared/images/images.js';
 
-import { formatValue, formatPercentage } from '../domain/formatFeedback'
-import Button from '../../shared/components/Button';
+import { formatValue, formatPercentage } from '../domain/formatFeedback.jsx'
+import Button from '../../shared/components/Button.jsx';
 
 export default function SummaryBar({ center, excellent, good, poor, excellentReason, poorReason }) {
     const total = excellent + good + poor;

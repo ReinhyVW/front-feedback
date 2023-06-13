@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { getCenters } from "../domain/getCenters";
-import { getRoles } from "../domain/getRoles";
+import { getCenters } from "../domain/getCenters.js";
+import { getRoles } from "../domain/getRoles.js";
 
 export default function UserForm() {
     const [username, setUsername] = useState(value => value)

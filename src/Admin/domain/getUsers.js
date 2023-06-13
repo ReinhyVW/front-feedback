@@ -1,4 +1,4 @@
-import { fetchUsers } from '../adapters/userService'
+import { fetchUsers } from '../adapters/userService.js'
 
 export const getUsers = async () => {
     try {

@@ -1,4 +1,4 @@
-import { fetchRoles } from '../adapters/rolesService'
+import { fetchRoles } from '../adapters/rolesService.js'
 
 export const getRoles = async () => {
     try {

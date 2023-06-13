@@ -1,6 +1,6 @@
-import CenterTable from "./CenterTable"
-import CenterForm from "./CenterForm"
-import DeleteForm from "./DeleteForm"
+import CenterTable from "./CenterTable.jsx"
+import CenterForm from "./CenterForm.jsx"
+import DeleteForm from "./DeleteForm.jsx"
 
 export default function CenterView() {
     return (

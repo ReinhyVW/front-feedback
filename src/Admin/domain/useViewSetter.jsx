@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import CenterView from "../components/CenterView";
-import UserView from "../components/UserView";
-import images from "../../shared/images/images";
+import CenterView from "../components/CenterView.jsx";
+import UserView from "../components/UserView.jsx";
+import images from "../../shared/images/images.js";
 
 export default function useViewSetter() {
   const [view, setView] = useState("Center");

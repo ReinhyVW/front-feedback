@@ -1,5 +1,5 @@
-import images from '../images/images'
-import logout from '../domain/logout'
+import images from '../images/images.js'
+import logout from '../domain/logout.js'
 
 export default function NavBar() {
     return (

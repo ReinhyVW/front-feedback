@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 
-import images from "../../shared/images/images";
+import images from "../../shared/images/images.js";
 import requireAuth from "../../shared/domain/requireAuth.jsx"
 
-import AnswerCard from "../components/AnswerCard"
-import ReasonCard from "../components/ReasonCard"
+import AnswerCard from "../components/AnswerCard.jsx"
+import ReasonCard from "../components/ReasonCard.jsx"
 
-import { answerImage } from "../domain/chooseImage"
-import { reasonTimeOut } from "../domain/reasonTimeOut";
+import { answerImage } from "../domain/chooseImage.js"
+import { reasonTimeOut } from "../domain/reasonTimeOut.js";
 
 function Reason() {
     const answer = localStorage.getItem("answer");

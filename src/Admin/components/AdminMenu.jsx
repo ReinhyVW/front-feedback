@@ -1,7 +1,7 @@
-import images from "../../shared/images/images";
+import images from "../../shared/images/images.js";
 
-import { createCenter, editCenter, deleteCenter } from "../domain/handlersCenter";
-import { createUser, editUser, deleteUser } from "../domain/HandlersUser"
+import { createCenter, editCenter, deleteCenter } from "../domain/handlersCenter.js";
+import { createUser, editUser, deleteUser } from "../domain/HandlersUser.js"
 
 export default function AdminMenu({ view, handler, image }) {
     function showAddForm() {

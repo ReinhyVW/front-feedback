@@ -1,5 +1,5 @@
-import NavBar from "../../shared/components/NavBar"
-import requireAuth from "../../shared/domain/requireAuth"
+import NavBar from "../../shared/components/NavBar.jsx"
+import requireAuth from "../../shared/domain/requireAuth.jsx"
 
 function Data() {
     return (

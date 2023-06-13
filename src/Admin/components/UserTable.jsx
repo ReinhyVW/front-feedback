@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-import { getUsers } from "../domain/getUsers";
-import { useSelectUser } from "../domain/selectUser";
+import { getUsers } from "../domain/getUsers.js";
+import { useSelectUser } from "../domain/selectUser.js";
 
 export default function UserTable() {
   const [users, setUsers] = useState([]);

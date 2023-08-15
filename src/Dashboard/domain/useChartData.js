@@ -1,16 +1,30 @@
 import { useMemo, useState, useEffect } from 'react';
 
-
 export function usePieData(excellent, good, poor) {
+    const width = window.innerWidth;
+
+    const breakpoints = {
+        medium: 1024,
+        large: 1440
+    };
+
     const data = useMemo(
         () => [
             ["Answer", "Amount for Day"],
-            ["Excellent", excellent] || ["Excellent", 0],
-            ["Good", good] || ["Good", 0],
-            ["Poor", poor] || ["Good", 0]
+            ["Excellent", excellent || 0],
+            ["Good", good || 0],
+            ["Poor", poor || 0]
         ],
         [excellent, good, poor]
     );
+
+    let fontSize = 14;
+
+    if (width >= breakpoints.large) {
+        fontSize = 20;
+    } else if (width >= breakpoints.medium) {
+        fontSize = 18;
+    }
 
     const options = {
         pieHole: 0.4,
@@ -19,7 +33,7 @@ export function usePieData(excellent, good, poor) {
         legend: {
             position: "bottom"
         },
-        fontSize: 22
+        fontSize
     };
 
     return {
@@ -31,6 +45,13 @@ export function usePieData(excellent, good, poor) {
 
 
 export function useBarData(reason) {
+    const width = window.innerWidth;
+
+    const breakpoints = {
+        medium: 1024,
+        large: 1440
+    };
+
     const [data, setData] = useState([
         [
             "Reason",
@@ -69,12 +90,20 @@ export function useBarData(reason) {
         }
     }, [reason]);
 
+    let fontSize = 14;
+
+    if (width >= breakpoints.large) {
+        fontSize = 20;
+    } else if (width >= breakpoints.medium) {
+        fontSize = 18;
+    }
+
     const options = {
         width: "100%",
         height: 250,
         bars: { groupWidth: "90%" },
         legend: { position: "none" },
-        fontSize: 24
+        fontSize
       };
 
     return {

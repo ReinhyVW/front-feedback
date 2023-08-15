@@ -9,6 +9,7 @@ import DataCard from "../../shared/components/DataCard.jsx";
 import { useFeedbackTotalizer } from "../domain/useFeedbackTotalizer.js";
 import { useFeedbackFilter } from "../domain/useFeedbackFilter.js";
 import { useBarData, usePieData } from "../domain/useChartData.js";
+import images from "../../shared/images/images.js";
 
 function Portal() {
     const [totalFeedbacks, poorSum] = useFeedbackTotalizer(today);
@@ -17,19 +18,17 @@ function Portal() {
     const { options: centerOptions, data: centerData } = usePieData(centerFeedbackSummary)
     const { options: reasonOptions, data: reasonData } = useBarData(reasonSummary)
 
-    console.log(centerFeedbackSummary)
-
     return (
         <div className="w-full h-full absolute">
             <NavBar />
-            <div className="absolute right-0 w-10/12 h-full flex flex-col items-center justify-evenly">
-                <div className="w-full h-1/4 flex items-center justify-evenly">
-                    <DataCard title={'Surveys Today'} data={totalFeedbacks} date={formattedToday} textColor={"text-indigo-800"} borderColor={"border-indigo-800"} bgColor={"bg-indigo-200"} />
-                    <DataCard title={'Critical Feedback'} data={poorSum} date={formattedToday} textColor={"text-red-800"} borderColor={"border-red-800"} bgColor={"bg-red-200"} />
+            <div className="absolute right-0 h-full flex flex-col items-center justify-evenly w-full xl:w-10/12 overflow-hidden">
+                <div className="flex items-center justify-evenly flex-col lg:flex-row w-full lg:mb-4 h-1/3">
+                    <DataCard title={'Surveys Today'} data={totalFeedbacks} date={formattedToday} image={images.survey} textColor={"text-indigo-800"} borderColor={"border-indigo-800"} bgColor={"bg-indigo-200"} />
+                    <DataCard title={'Critical Feedback'} data={poorSum} date={formattedToday} image={images.critical} textColor={"text-red-800"} borderColor={"border-red-800"} bgColor={"bg-red-200"} />
                 </div>
 
-                <div className="w-full h-2/3 flex items-center justify-evenly">
-                    <div className="h-full w-5/12 flex flex-col items-center justify-center color-important">
+                <div className="h-2/3 overflow-scroll flex flex-col lg:flex-row lg:items-center justify-start lg:justify-evenly w-11/12 lg:w-full">
+                    <div className="lg:h-full flex flex-col items-center justify-center w-full lg:w-5/12">
                         <h2 className="text-sky-950 text-3xl ">Surveys per Center</h2>
                         <Chart
                             chartType="PieChart"
@@ -40,7 +39,7 @@ function Portal() {
                         />
                     </div>
 
-                    <div className="h-full w-5/12 flex flex-col items-center justify-center">
+                    <div className="lg:h-full flex flex-col items-center justify-center w-full lg:w-5/12">
                         <h2 className="text-sky-950 text-3xl ">Summary of Reasons</h2>
                         <Chart
                             chartType="BarChart"

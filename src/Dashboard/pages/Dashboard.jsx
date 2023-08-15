@@ -20,7 +20,7 @@ function Dashboard() {
         <div className="w-full h-full absolute">
             <NavBar />
 
-            <div className="absolute right-0 w-10/12 h-full flex flex-col items-center justify-evenly">
+            <div className="absolute right-0 h-full flex flex-col items-center justify-evenly w-full xl:w-10/12 overflow-hidden">
                 <div className="flex w-11/12 items-center justify-center h-24" id='top-container'>
                     <SearchBar />
                 </div>

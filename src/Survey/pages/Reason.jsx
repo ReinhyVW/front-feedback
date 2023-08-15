@@ -22,21 +22,21 @@ function Reason() {
     }, []);
 
     return (
-        <div className="w-full h-full absolute flex flex-col items-center justify-center gap-2">
+        <div className="w-full h-full absolute flex flex-col items-center justify-center">
             <div className="flex flex-col w-full h-1/2 items-center justify-center gap-8">
-                <div className="w-full h-4/6 flex items-center justify-center">
+                <div className="w-full h-3/6 flex items-center justify-evenly">
                     <AnswerCard icon={image} answer={answer} />
                 </div>
-                <h1 className="text-sky-950 text-7xl">Please select a reason</h1>
+                <h1 className="text-sky-950 text-2xl sm:text-3xl md:text-4xl lg:text-6xl">Please select a reason</h1>
             </div>
 
-            <div className="lg:flex lg:flex-row lg:w-10/12 lg:h-1/4 lg:items-center lg:justify-center lg:gap-2 md:flex-col md:w-3/4 md:h-1/4 md:gap-2">
-                <div className="lg:flex lg:w-1/2 lg:items-center lg:justify-center lg:gap-2 md:gap-2 md:flex md:h-1/2 md:items-center md:justify-center">
+            <div className="flex w-11/12 h-1/3 lg:h-1/4 flex-col lg:flex-row justify-evenly lg:gap-2">
+                <div className="flex items-center justify-evenly lg:w-[49%] lg:gap-2">
                     <ReasonCard title={"Doctor"} reason={1} />
                     <ReasonCard title={"Staff"} reason={2} />
                     <ReasonCard title={"Hold"} reason={3} />
                 </div>
-                <div className="lg:flex lg:w-1/2 lg:items-center lg:justify-center lg:gap-2 md:gap-2 md:flex md:h-1/2 md:items-center md:justify-center">
+                <div className="flex items-center justify-evenly lg:w-[49%] lg:gap-2">
                     <ReasonCard title={"Front Desk"} reason={4} />
                     <ReasonCard title={"Facility"} reason={5} />
                     <ReasonCard title={"All"} reason={6} />

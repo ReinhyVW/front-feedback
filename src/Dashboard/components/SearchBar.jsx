@@ -35,7 +35,7 @@ export default function SearchBar() {
                 <input type="date" id='date' className='h-4/5 w-full rounded-3xl bg-sky-50 cursor-pointer text-sky-950 p-1' />
             </div>
 
-            <Button content={"Go to Detail"} size={"sm"} action={saveSearchData} />
+            <Button content={"Go to Detail"} size={"md"} action={saveSearchData} />
         </div>
     );
 }

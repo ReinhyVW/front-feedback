@@ -46,7 +46,7 @@ function Dashboard() {
         <div className="w-full h-full absolute">
             <NavBar />
 
-            <div className="absolute right-0 w-10/12 h-full flex flex-col items-center justify-evenly overflow-hidden">
+            <div className="absolute right-0 w-full xl:w-10/12 h-full flex flex-col items-center justify-evenly overflow-hidden">
                 <div className="flex w-11/12 items-center justify-center h-24" id='top-container'>
                     <SearchBar />
                 </div>
@@ -60,8 +60,8 @@ function Dashboard() {
                         onChange={(e) => handleReasonChange(e.target.value)}
                     >
                         <option value="Poor">Poor</option>
-                        <option value="Excellent">Good</option>
-                        <option value="Good">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Excellent">Excellent</option>
                     </select>
                     <div className='flex w-full h-full mt-4'>
                         <div className='flex flex-col box-border border-white h-full w-1/3 items-center'>

@@ -1,7 +1,9 @@
 import './App.css'
+import 'flowbite'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Login from './Login/pages/Login.jsx'
+import Undefined from './Login/pages/Undefined.jsx'
 
 import Portal from './Portal/pages/Portal.jsx'
 
@@ -29,6 +31,7 @@ function App() {
         <Route path='/detail' element={<Detail />} />
         <Route path='/admin' element={<Admin />} />
         <Route path='/data' element={<Data />} />
+        <Route path='/undefined' element={<Undefined />} />
       </Routes>
     </BrowserRouter>
   )

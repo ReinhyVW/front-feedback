@@ -13,7 +13,7 @@ export function usePieData(data) {
     const options = {
         pieHole: 0.4,
         is3D: false,
-        colors: ["#fecaca", "#d9f99d", "#c7d2fe", "#f5d0fe", "#fecdd3"],
+        colors: ["#fecdd3", "#c7d2fe", "#d9f99d", "#f5d0fe", "#fecaca"],
         pieSliceTextStyle: {
             color: '#082f49',
         },
@@ -64,7 +64,7 @@ export function useBarData(reason) {
             ];
 
             Object.entries(reason).forEach(([reason, repetitions]) => {
-                newData.push([reason, repetitions, "#93c5fd", null]);
+                newData.push([reason, repetitions, "#FECACA", null]);
             });
 
             setData(newData);

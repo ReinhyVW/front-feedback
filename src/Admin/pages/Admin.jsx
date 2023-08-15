@@ -11,7 +11,7 @@ function Admin() {
   return (
     <>
       <NavBar />
-      <div className="absolute right-0 w-10/12 h-full flex flex-col items-center justify-evenly overflow-hidden">
+      <div className="absolute right-0 h-full flex flex-col items-center justify-evenly w-full xl:w-10/12 overflow-hidden">
         <div className="h-24 w-10/12">
           <AdminMenu view={view} handler={handleView} image={toggleStatus} />
         </div>

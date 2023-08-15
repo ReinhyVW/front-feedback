@@ -7,7 +7,7 @@ export function formatPercentage(value, total) {
 
 export function formatValue(value) {
     if (value === null || value === 0) {
-        return <span>None</span>;
+        return <span>N</span>;
     }
     return value;
 }

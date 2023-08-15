@@ -16,6 +16,10 @@ import edit from './edit.svg';
 import deleteIcon from './delete.svg';
 import toggle from './toggle.svg';
 import toggled from './toggled.svg';
+import critical from './critical.svg';
+import download from './download.svg'
+import cancel from './cancel.svg'
+import retry from './retry.svg';
 
 const images = {
     dhg,
@@ -35,7 +39,11 @@ const images = {
     edit,
     deleteIcon,
     toggle,
-    toggled
+    toggled,
+    critical,
+    download,
+    cancel,
+    retry
 };
 
 export default images;
